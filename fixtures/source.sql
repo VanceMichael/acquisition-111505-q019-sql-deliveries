@@ -1,0 +1,15 @@
+SET NAMES utf8mb4;
+USE museum;
+CREATE TABLE `register` (`id` INTEGER, `label` TEXT);
+BEGIN;
+INSERT INTO `register` VALUES (1,'借展\\登记'),(2,NULL);
+COMMIT;
+SET SQL_MODE='NO_BACKSLASH_ESCAPES';
+BEGIN;
+INSERT INTO `register` (`label`,`id`) VALUES ('原样\n文字',3);
+COMMIT;
+DROP TABLE `register`;
+CREATE TABLE `register` (`label` TEXT, `id` INTEGER, `raw` BLOB);
+BEGIN;
+INSERT INTO `register` VALUES ('重新建表',4,X'00ff');
+COMMIT;

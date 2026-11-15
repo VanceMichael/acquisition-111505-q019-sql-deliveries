@@ -1,0 +1,9 @@
+{
+  "name": "合作系统 SQL 交付的会话语义与事务收件",
+  "probe": "/exports",
+  "identityFields": [
+    "database",
+    "table",
+    "generation"
+  ]
+}

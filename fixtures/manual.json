@@ -1,0 +1,9 @@
+{
+  "database": "museum",
+  "table": "register",
+  "generation": 1,
+  "row": {
+    "id": 1,
+    "label": "借展登记"
+  }
+}
